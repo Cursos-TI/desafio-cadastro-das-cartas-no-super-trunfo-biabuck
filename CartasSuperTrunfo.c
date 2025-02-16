@@ -1,25 +1,19 @@
 #include <stdio.h>
 
-int main() {
-
+int main (){
     printf("Desafio Super Trunfo\n");
-    
-    int população;
-    int area;
-    int PIB;
-    int numeroPontosTuristicos;
 
-    printf("População: \n");
-    scanf("%d", &população);
+    char codigo[50];
+    char nome[4];
+    int populacao;
+    float area;
+    double PIB;
+    int pontosTuristicos;
 
-    printf("Digite a area: \n");
-    scanf("%f", &area);
+    printf ("Código: \n");
+    scanf("%s", &codigo);
 
-    printf("Informe o PIB: \n");
-    scanf("%f", &PIB);
 
-    printf("Informe o numero de pontos turisticos: \n");
-    scanf("%d", &numeroPontosTuristicos);
 
 
 
