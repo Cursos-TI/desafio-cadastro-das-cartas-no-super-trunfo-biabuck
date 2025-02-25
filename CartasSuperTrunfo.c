@@ -11,6 +11,7 @@ int main (){
     float area1;
     double PIB1;
     int pontosTuristicos1;
+    float densidadePopulacional1;
     float PIBperCapta1;
 
 
@@ -35,6 +36,7 @@ int main (){
     printf("Digite a quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos1);
 
+    densidadePopulacional1 = populacao1 / area1;
     PIBperCapta1 = PIB1 / populacao1;
 
 
@@ -47,6 +49,7 @@ int main (){
     float area2;
     double PIB2;
     int pontosTuristicos2;
+    float densidadePopulacional2;
     float PIBperCapta2;
 
 
@@ -71,6 +74,7 @@ int main (){
     printf("Digite a quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos2);
 
+    densidadePopulacional2 = populacao2 / area2;
     PIBperCapta2 = PIB2 / populacao2;
     
     //Informações carta 1
@@ -79,10 +83,11 @@ int main (){
     printf("Código: %s \n", codigo1);
     printf("Cidade: %s \n", nome1);
     printf("População: %d \n", populacao1);
-    printf("Área: %.2f \n", area1);
-    printf("PIB: %.2lf \n", PIB1); // Corrigido para %.2lf
+    printf("Área: %.2f km \n", area1);
+    printf("PIB: %.2lf bilhões de reais \n", PIB1); // Corrigido para %.2lf
     printf("Pontos turísticos: %d \n", pontosTuristicos1);
-    printf("PIB per Capta: %.2f \n \n", PIBperCapta1);
+    printf("Densidade Populacional: %.2f hab/km \n", densidadePopulacional1);
+    printf("PIB per Capta: %.2f reais \n \n", PIBperCapta1);
 
     //Informaçoes carta 2
     printf("Carta 2: \n");
@@ -90,10 +95,11 @@ int main (){
     printf("Código: %s \n", codigo2);
     printf("Cidade: %s \n", nome2);
     printf("População: %d \n", populacao2);
-    printf("Área: %.2f \n", area2);
-    printf("PIB: %.2lf \n", PIB2); // Corrigido para %.2lf
+    printf("Área: %.2f km \n", area2);
+    printf("PIB: %.2lf bilhões de reais \n", PIB2); // Corrigido para %.2lf
     printf("Pontos turísticos: %d \n", pontosTuristicos2);
-    printf("PIB per Capta: %.2f \n", PIBperCapta2);
+    printf("Densidade Populacional: %.2f hab/km \n", densidadePopulacional2);
+    printf("PIB per Capta: %.2f reais \n", PIBperCapta2);
 
     return 0;
 }
